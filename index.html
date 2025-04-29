@@ -4,22 +4,53 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CSS Media Queries</title>
+        <title>CSS Mini-Project: Profile Cards</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
         <header>
-            <h1>Header</h1>
-            <nav><h2>Nav</h2></nav>
+            <h1>Employee Profiles</h1>
+            <nav>
+                <a href="#profile1">Joe</a>
+                <a href="#profile2">Matt</a>
+                <a href="#profile3">Jane</a>
+            </nav>
         </header>
 
         <main>
-            <h2>Main</h2>
+            <section id="profile1" class="profile-card">
+                <figure>
+                    <img src="./mini project 2/img/profile1-500x500.png" alt="Joe Coder" width="500" height="500" />
+                    <figcaption>Joe Coder</figcaption>
+                </figure>
+                <p>Joe is a software engineer with 5 years of experience.</p>
+            </section>
+
+            <section id="profile2" class="profile-card">
+                <figure>
+                    <img src="./mini project 2/img/profile2-500x500.png" alt="Matt Manager" width="500" height="500" />
+                    <figcaption>Matt Manager</figcaption>
+                </figure>
+                <p>Matt is a project manager with 10 years of experience.</p>
+            </section>
+
+            <section id="profile3" class="profile-card">
+                <figure>
+                    <img src="./mini project 2/img/profile3-500x500.png" alt="Jane Designer" width="500" height="500" />
+                    <figcaption>Jane Designer</figcaption>
+                </figure>
+                <p>Jane is a UX designer with 7 years of experience.</p>
+            </section>
         </main>
 
         <footer>
-            <h2>Footer</h2>
+            <p>&copy; 2023 Company Name. All rights reserved.</p>
+            <nav>
+                <a href="#profile1">Joe</a>
+                <a href="#profile2">Matt</a>
+                <a href="#profile3">Jane</a>
+            </nav>
         </footer>
     </body>
 </html>
