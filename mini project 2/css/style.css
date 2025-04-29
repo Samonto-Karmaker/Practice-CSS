@@ -48,16 +48,14 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a,
-nav a:visited {
+nav :is(a, a:visited) {
     color: #000;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
 }
-nav a:hover,
-nav a:focus {
+nav :is(a:focus, a:hover) {
     border-radius: 5px;
     background-color: #1e293b;
     color: whitesmoke;
@@ -104,6 +102,12 @@ main {
     margin: 1rem;
 }
 
+.profile-card figcaption::first-letter {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #1e293b;
+}
+
 .profile-card img {
     border: 5px double #000;
     border-radius: 50%;
@@ -112,6 +116,19 @@ main {
 .profile-card p {
     color: hsla(0, 0%, 0%, 0.756);
     text-align: center;
+    padding: 0.5rem;
+}
+
+.profile-card p::before {
+    content: "“";
+    font-size: 1.5em;
+    color: #1e293b;
+}
+
+.profile-card p::after {
+    content: "”";
+    font-size: 1.5em;
+    color: #1e293b;
 }
 
 footer {
