@@ -1,6 +1,10 @@
 @import "resets";
 @import "variables";
 
+@function get-font-weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
 body {
     background-color: $primary-color;
     color: $secondary-color;
@@ -18,10 +22,10 @@ body {
         // This will compile to .main_paragraph
         font-size: 1.2em;
         line-height: 1.5;
-        font-weight: map-get($font-weights, "normal");
+        font-weight: get-font-weight(bold);
 
         &:hover { // Nested selector for hover effect. & represents the parent selector
-            font-weight: map-get($font-weights, "bold");
+            font-weight: get-font-weight(thin);
         }
     }
 }

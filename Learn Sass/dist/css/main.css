@@ -18,8 +18,8 @@ body {
 .main .main_paragraph {
   font-size: 1.2em;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 700;
 }
 .main .main_paragraph:hover {
-  font-weight: 700;
+  font-weight: 100;
 }/*# sourceMappingURL=main.css.map */
