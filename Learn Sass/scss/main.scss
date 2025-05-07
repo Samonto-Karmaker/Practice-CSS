@@ -1,12 +1,5 @@
-$primary-color: whitesmoke;
-$secondary-color: #333;
-$font-family: 'Arial, sans-serif';
-$font-weights: (
-    "thin": 100,
-    "normal": 400,
-    "bold": 700,
-    "bolder": 900,
-);
+@import "resets";
+@import "variables";
 
 body {
     background-color: $primary-color;
