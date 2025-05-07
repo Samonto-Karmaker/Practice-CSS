@@ -40,20 +40,25 @@ body {
     margin: 0 auto;
     width: 80%;
 
-    #{&}_paragraph { 
+    #{&}_paragraph_1 { 
         // Using interpolation to create a class name. 
         // #{} allows for dynamic class names. #{&} refers to the parent selector
         // This will compile to .main_paragraph
         font-size: 1.2em;
         line-height: 1.5;
-        font-weight: get-font-weight(bold);
+        @include theme(dark);
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: get-font-weight(thin);
 
         &:hover { // Nested selector for hover effect. & represents the parent selector
-            @include theme(dark);
-            border-radius: 5px;
-            padding: 10px;
-            font-weight: get-font-weight(thin);
+            font-weight: get-font-weight(bold);
         }
+    }
+
+    #{&}_paragraph_2 {
+        @extend .main_paragraph_1; // Extending the styles of .main_paragraph
+        @include theme(light);
     }
 
     @include responsive($breakpoint) {

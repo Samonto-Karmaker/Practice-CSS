@@ -20,17 +20,21 @@ body {
   margin: 0 auto;
   width: 80%;
 }
-.main .main_paragraph {
+.main .main_paragraph_1, .main .main_paragraph_2 {
   font-size: 1.2em;
   line-height: 1.5;
-  font-weight: 700;
-}
-.main .main_paragraph:hover {
   background-color: #333;
   color: whitesmoke;
   border-radius: 5px;
   padding: 10px;
   font-weight: 100;
+}
+.main .main_paragraph_1:hover, .main .main_paragraph_2:hover {
+  font-weight: 700;
+}
+.main .main_paragraph_2 {
+  background-color: whitesmoke;
+  color: #333;
 }
 @media (max-width: 768px) {
   .main {
