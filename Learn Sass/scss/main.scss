@@ -12,5 +12,23 @@ body {
     background-color: $primary-color;
     color: $secondary-color;
     font-family: $font-family;
-    font-weight: map-get($font-weights, "bold");
+}
+
+.main {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+
+    #{&}_paragraph { 
+        // Using interpolation to create a class name. 
+        // #{} allows for dynamic class names. #{&} refers to the parent selector
+        // This will compile to .main_paragraph
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-weight: map-get($font-weights, "normal");
+
+        &:hover { // Nested selector for hover effect. & represents the parent selector
+            font-weight: map-get($font-weights, "bold");
+        }
+    }
 }

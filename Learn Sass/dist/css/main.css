@@ -2,5 +2,18 @@ body {
   background-color: whitesmoke;
   color: #333;
   font-family: "Arial, sans-serif";
+}
+
+.main {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+.main .main_paragraph {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.main .main_paragraph:hover {
   font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
